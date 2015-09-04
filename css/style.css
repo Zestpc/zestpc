@@ -1,6 +1,9 @@
 /* ==== Google font ==== */
-@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
-
+/*@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');*/
+@font-face {
+    font-family: "Bank Gothic Light BT";
+    src: url('fonts/bgothl.ttf')
+}
 
 body {
     width: 100%;
@@ -23,9 +26,8 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-    text-transform: uppercase;
-    font-family: Montserrat,sans-serif;
-    font-weight: 700;
+    /*font-family: Montserrat,sans-serif;*/
+    /*font-weight: 700;*/
     letter-spacing: 1px;
 }
 
@@ -56,10 +58,14 @@ a:focus {
     font-weight: 400;
 }
 
+.float-text{
+    position: absolute;
+    bottom: 10px;
+}
+
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-	
 }
 
 .navbar-brand {
@@ -68,14 +74,17 @@ a:focus {
 .navbar-brand {
   height: 40px;
   padding: 5px 15px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1em;
+    color: #fff;
 }
 
-.navbar-brand h1{
-	color: #fff;
-  font-size: 20px;
+.navbar-brand .title-name{
+  color: #fff;
+  font-size: 30px;
   line-height: 40px;
+  font-weight: 900;
+    letter-spacing: 3px;
 }
 
 .navbar-brand:focus {
@@ -94,41 +103,18 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
+
 
 .navbar-custom.top-nav-collapse ul.nav li a {
 	    -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 	color: #fff;
-}
-
-.navbar-custom ul.nav ul.dropdown-menu {
-	  border-radius: 0;	
-}
-
-.navbar-custom ul.nav ul.dropdown-menu li {
-	border-bottom: 1px solid #f5f5f5;
-
-}
-
-.navbar-custom ul.nav ul.dropdown-menu li:last-child{
-	border-bottom: none;
-}
-
-.navbar-custom ul.nav ul.dropdown-menu li a {
-	padding: 10px 20px;
-}
-
-.navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	background: #fefefe;
-}
-
-.navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-	color: #666;
 }
 
 .navbar-custom .nav li a {
@@ -161,6 +147,14 @@ a:focus {
     outline: 0;
 }
 
+.white-text{
+    color: white;
+    font-size: 18px;
+}
+
+.paddingbot{
+    padding: 5px 0;
+}
 
 /* loader */
 #preloader {
@@ -252,6 +246,7 @@ hr {
 .marginbot-30{margin-bottom:30px !important;}
 .marginbot-40{margin-bottom:40px !important;}
 .marginbot-50{margin-bottom:50px !important;}
+.sidemarginbot-10{margin: 0 1px}
 
 /* ===========================
 --- General sections
@@ -274,7 +269,26 @@ hr {
 }
 
 
-/* --- section bg var --- */
+/*Background Colors*/
+.bg-orange{
+    background: #e65100;
+}
+
+.bg-indigo{
+    background: #536DFE;
+}
+
+.bg-yellow{
+    background: #ff8f00;
+}
+
+.bg-red{
+    background: #D32F2F;
+}
+
+.bg-purple{
+    background: #7e3878;
+}
 
 .bg-white {
 	background: #fff;
@@ -284,6 +298,9 @@ hr {
 	background: #f8f8f8;
 }
 
+.bg-darkgray {
+    background: #ececec;
+}
 
 .bg-dark {
 	background: #575757;
@@ -304,20 +321,20 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	
-	/*background: url(../img/bg1.jpg) no-repeat top center;*/
+	background-color: #1976D2;
+    /*background-size: cover;*/
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:150px 0 80px 0;
 }
 
-.intro .slogan {
+.intro .intro-text {
 	text-align: center;
-
+    margin: 0 30px 0 0;
 }
 
-.intro .page-scroll {
+/*.intro .page-scroll {
 	text-align: center;
 }
 
@@ -327,29 +344,34 @@ hr {
 
 .intro-text {
     font-size: 18px;
-}
+}*/
 
-.intro .slogan h2 {
+.intro .intro-text h2 {
 	color: #FFF;
 	text-shadow: none;
-	font-size: 60px;
+	font-size: 45px;
 	line-height: 60px;
-	font-weight: 700;
-	font-family: Montserrat, sans-serif;
+	/*font-weight: 700;*/
+	/*font-family: Montserrat, sans-serif;*/
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: none;
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
 	text-shadow: -1px 0 1px #000;
 }
 
-.intro .slogan h4 {
+.intro .intro-text h4 {
 	color: #fff;
 	text-shadow: -1px 1px 1px #000;
+    text-transform: none;
 }
 
+.intro .featured{
+    margin: 0px auto 0px auto;
+    width: 80%;
+}
 
 /* ===========================
 --- About
@@ -420,6 +442,29 @@ hr {
 .team-social .social-google a:hover{background: #333;}
 .team-social .social-vimeo a:hover{background: #71c6f3;}
 
+
+/* ===========================
+--- Play
+============================ */
+
+.play{
+    background-color: #323232;
+}
+
+.float-left{
+    float: left;
+}
+
+.play-info {
+    font-size: 18px;
+    padding: 0 15px 15px 15px;
+}
+
+.play-feature {
+    font-size: 20px;
+    padding: 10px 0px 20px 0px;
+    font-weight: 500;
+}
 
 /* ===========================
 --- Services
@@ -713,6 +758,7 @@ Parallax
 }
 
 
+
 /* Media queries */
 
 @media(min-width:767px) {
@@ -729,16 +775,16 @@ Parallax
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
     }
+
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
-	
-    .intro {
+
+    .heightbot {
         height: 100%;
-        padding: 0;
+        /*padding: 0;*/
     }
 
     .brand-heading {
@@ -761,8 +807,6 @@ Parallax
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
-
-	
 }
 
 @media (max-width:480px) {
@@ -789,4 +833,15 @@ Parallax
 		font-size: 20px;
 	}
 	
+}
+
+@media (max-width: 1200px) {
+    .heightbot {
+        height: auto;
+    }
+}
+
+.intro-play{
+    height: 100px;
+    background: linear-gradient(#1b113a, #323232);
 }
