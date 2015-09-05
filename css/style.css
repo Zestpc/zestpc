@@ -69,22 +69,28 @@ a:focus {
 }
 
 .navbar-brand {
-    font-weight: 700;
-}
-.navbar-brand {
   height: 40px;
   padding: 5px 15px;
   font-size: 15px;
   line-height: 1em;
-    color: #fff;
+    color: #666;
+    font-weight: 700;
 }
 
 .navbar-brand .title-name{
-  color: #fff;
+  color: #666;
   font-size: 30px;
   line-height: 40px;
   font-weight: 900;
     letter-spacing: 3px;
+}
+
+.navbar-custom.top-nav-collapse .navbar-brand{
+    color: #fff;
+}
+
+.navbar-custom.top-nav-collapse .navbar-brand .title-name{
+    color: #fff;
 }
 
 .navbar-brand:focus {
@@ -103,7 +109,7 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #fff;
+    color: #666;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -299,7 +305,7 @@ hr {
 }
 
 .bg-darkgray {
-    background: #ececec;
+    background: #F8F8F8;
 }
 
 .bg-dark {
@@ -321,15 +327,18 @@ hr {
 .intro {
 	width:100%;
 	position:relative;
-	background-color: #1976D2;
-    /*background-size: cover;*/
+    background: #F8F8F8;
+    /*background: -webkit-radial-gradient(red 5%, green 15%, blue 60%);
+    background: -o-radial-gradient(red 5%, green 15%, blue 60%);
+    background: -moz-radial-gradient(red 5%, green 15%, blue 60%);
+    background: radial-gradient(farthest-side at 80% 55%, #8744e8, #5133AB);*/
 }
 
 #intro.intro {
 	padding:150px 0 80px 0;
 }
 
-.intro .intro-text {
+.intro .intro-text{
 	text-align: center;
     margin: 0 30px 0 0;
 }
@@ -347,7 +356,7 @@ hr {
 }*/
 
 .intro .intro-text h2 {
-	color: #FFF;
+	color: #666;
 	text-shadow: none;
 	font-size: 45px;
 	line-height: 60px;
@@ -359,12 +368,12 @@ hr {
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
-	text-shadow: -1px 0 1px #000;
+	/*text-shadow: -1px 0 1px #000;*/
 }
 
 .intro .intro-text h4 {
-	color: #fff;
-	text-shadow: -1px 1px 1px #000;
+	color: #666;
+	/*text-shadow: -1px 1px 1px #000;*/
     text-transform: none;
 }
 
