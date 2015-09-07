@@ -158,10 +158,6 @@ a:focus {
     font-size: 18px;
 }
 
-.paddingbot{
-    padding: 5px 0;
-}
-
 /* loader */
 #preloader {
     background: #ffffff;
@@ -253,6 +249,15 @@ hr {
 .marginbot-40{margin-bottom:40px !important;}
 .marginbot-50{margin-bottom:50px !important;}
 .sidemarginbot-10{margin: 0 1px}
+
+/* paddings */
+.paddingbot{
+    padding: 5px 0;
+}
+
+.paddingbot-15{
+    padding: 15px 0;
+}
 
 /* ===========================
 --- General sections
@@ -486,24 +491,24 @@ hr {
 
 
 /* ===========================
---- Contact
+--- Buy
 ============================ */
 
-form#contact-form .form-group label {
+form#buy-form .form-group label {
 	text-align: left !important;
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 12px;
 }
-form#contact-form input,form#contact-form select,form#contact-form textarea {
+form#buy-form input,form#buy-form select,form#buy-form textarea {
 	border-radius: 0;
 	border: 1px solid #eee;
   -webkit-box-shadow: none;
           box-shadow:  none;
 }
 
-form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
+form#buy-form input:focus,form#buy-form select:focus,form#buy-form textarea:focus {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
@@ -511,6 +516,16 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
   background-color: #fefefe;
   border: 1px solid #eee;
   border-radius: 0;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }
 
 .widget-contact {
