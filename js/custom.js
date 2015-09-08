@@ -35,4 +35,32 @@
 		});
 	});
 
+	Parse.initialize("GFFNw5yzAcReEiVN7h5Poqj1G6QGDbeZqgcmZMrl", "g6cIiYa4DkkxiUMCCogf8ASspdAFQFIRbcRJ1eGf");
+
+	var Registration = Parse.Object.extend("Registration");
+
+	function saveRegisters(){
+		var registration = new Registration();
+
+		registration.set("name", $("#name").val());
+		registration.set("email", $("#email").val());
+		registration.set("city", $("#city").val());
+		registration.set("number", $("#number").val());
+
+		var callback = {
+			success:function(){
+				$('#response').html('Registered Successfully. Thanks for the support!').addClass('success').fadeIn('fast');
+			},
+			error: function(){
+				$('#response').html('Oops! Something went wrong').addClass('error').fadeIn('fast');
+			}
+		};
+
+		registration.save(null, callback);
+	}
+
+	$("#buyForm").on("submit", function(e) {
+		e.preventDefault();
+		saveRegisters();
+	});
 })(jQuery);
