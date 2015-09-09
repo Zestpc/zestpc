@@ -67,4 +67,15 @@
 	$('.shareButton').on('click',function(e){
 		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html', 'sharer', 'width=626,height=436');;
 	})
+
+	$.post(
+		'https://graph.facebook.com',
+		{
+			id: 'http://zestpc.com/index.html',
+			scrape: true
+		},
+		function(response){
+			console.log(response);
+		}
+	);
 })(jQuery);
