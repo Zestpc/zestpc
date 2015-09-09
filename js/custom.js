@@ -63,4 +63,8 @@
 		e.preventDefault();
 		saveRegisters();
 	});
+
+	$('.shareButton').on('click',function(e){
+		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html', 'sharer', 'width=626,height=436');;
+	})
 })(jQuery);
