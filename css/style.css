@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 30px;
+    margin: 0 0 10px ;
     /*font-family: Montserrat,sans-serif;*/
     /*font-weight: 700;*/
     letter-spacing: 1px;
@@ -259,13 +259,17 @@ hr {
     padding: 15px 0;
 }
 
+.paddingbot-25{
+    padding: 25px 0;
+}
+
 /* ===========================
 --- General sections
 ============================ */
 
 .home-section {
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 	display:block;
     position:relative;
     z-index:120;
@@ -323,6 +327,11 @@ hr {
 	color: #fff;
 }
 
+.info {
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    padding: 0 15px 15px 15px;
+}
 
 
 /* ===========================
@@ -340,12 +349,12 @@ hr {
 }
 
 #intro.intro {
-	padding:150px 0 80px 0;
+	padding:120px 0 80px 0;
 }
 
 .intro .intro-text{
 	text-align: center;
-    margin: 0 30px 0 0;
+    margin: 30px 0 0 0;
 }
 
 .intro .intro-text h2 {
@@ -368,6 +377,7 @@ hr {
 	color: #666;
 	/*text-shadow: -1px 1px 1px #000;*/
     text-transform: none;
+    font-size: 25px;
 }
 
 .intro .featured{
@@ -460,11 +470,6 @@ small{
     float: left;
 }
 
-.play-info {
-    font-size: 18px;
-    padding: 0 15px 15px 15px;
-}
-
 .play-feature {
     font-size: 20px;
     padding: 10px 0px 20px 0px;
@@ -524,7 +529,6 @@ small{
 form#buyForm .form-group label {
 	text-align: left !important;
 	display: block;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 12px;
 }
