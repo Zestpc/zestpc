@@ -7,7 +7,15 @@
     <meta name="description" content="Get much more from your TV. Change the way you use it">
     <meta name="author" content="Zest">
 
+
     <title>Zest - The Smart Choice for your TV</title>
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+
+    <meta property="og:url"           content="http://zestpc.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Zest" />
+    <meta property="og:description"   content="The Future of TV is Here! Zest is a Pocket-sized Mini Box that Transforms Your TV to a Computer" />
+    <meta property="og:image"         content="img/bg.png" />
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -22,6 +30,16 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Preloader -->
 <div id="preloader">
     <div id="load"></div>
@@ -75,7 +93,7 @@
         </div>
         <div class="intro-text">
             <h2>The Future of TV is Here!</h2>
-            <h4>Zest is a pocket sized mini box that transforms your TV to a Computer <br>
+            <h4>Zest is a Pocket-sized Mini Box that Transforms Your TV to a Computer <br>
                <!--With the included Zest Play app, watch your favorite movies, TV shows and online series anytime now--> <!--with Windows<sup>&reg;</sup> operating system--></h4>
         </div>
     </div>
@@ -98,9 +116,15 @@
                             <h2>Zest Play</h2>
                             <!--<i class="fa fa-2x fa-angle-down"></i>-->
                             <p class="info">
-                                One stop app for all your entertainment needs<br>
-                                Pre-installed with every Zest
+                                Introducing a One Stop App for All Your Entertainment Needs<br>
+                                Pre-installed with Every Zest
                             </p>
+                            <!-- Your share button code -->
+                            <div class="fb-share-button"
+                                 data-href="http://zestpc.com"
+                                 data-layout="button_count">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -156,7 +180,7 @@
                     <div class="carousel-caption2">
                         <h3>Free HD content</h3>
                         <p>Paying extra for HD content with your TV subscription?<br>
-                            Access the same content plus a lot more in full 1080p HD at no extra cost</p>
+                            Access thousands of hours of content in full 1080p HD at no extra cost</p>
                     </div>
                 </div>
             </div>
@@ -263,12 +287,12 @@
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-2.png" alt=""/>
                         </div>
-                        <div class="service-desc">
-                            <h5>Web Browsing</h5>
+                        <div class="feature-desc">
+                            <h5>Browse Web</h5>
                             <p>With full desktop browsing capabilities, surf internet on  your TV like a pro</p>
                         </div>
                     </div>
@@ -276,11 +300,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-3.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>Video Calling</h5>
                             <p>Get a webcam and use your favorite app to video chat with your friends and family</p>
                         </div>
@@ -289,11 +313,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-4.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>Play Games</h5>
                             <p>Have fun playing installed, online or streaming games from the comfort of your couch</p>
                         </div>
@@ -302,12 +326,12 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-1.png" alt=""/>
                         </div>
-                        <div class="service-desc">
-                            <h5>External Devices</h5>
+                        <div class="feature-desc">
+                            <h5>Connect Devices</h5>
                             <p>Connect phone, pen-drive or any USB, WiFi, Bluetooth device and access them on TV</p>
                         </div>
                     </div>
@@ -343,11 +367,11 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-1.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>Less Cost</h5>
                             <p>A PC at a fraction of the cost of desktops; Consumes power as low as your phone</p>
                         </div>
@@ -356,24 +380,24 @@
             </div>
             <div class="col-sm-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-2.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>Less Space</h5>
-                            <p>Zest fits in your palm and helps you save valuable space compared to a desktop tower</p>
+                            <p>Zest fits in your palm and helps you save space compared to a desktop tower</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-3.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>Learn More</h5>
                             <p>Pickup valuable skills from cooking to coding. Hook yourself to the joy of learning</p>
                         </div>
@@ -382,13 +406,13 @@
             </div>
             <div class="col-sm-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <div class="service-icon">
+                    <div class="feature-box">
+                        <div class="feature-icon">
                             <img src="img/icons/service-icon-3.png" alt=""/>
                         </div>
-                        <div class="service-desc">
+                        <div class="feature-desc">
                             <h5>More Apps</h5>
-                            <p>Install the largest collection of software and apps made for Windows<sup>&reg;</sup> operating system</p>
+                            <p>Install from the largest collection of software and apps made for Windows<sup>&reg;</sup> operating system</p>
                         </div>
                     </div>
                 </div>
@@ -427,11 +451,11 @@
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-1.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-1.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Processor</h5>
                             <p>Intel Atom Quad-Core Z3735F</p>
                         </div>
@@ -440,11 +464,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-2.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-2.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Memory</h5>
                             <p>2GB RAM DDR3L</p>
                         </div>
@@ -453,11 +477,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-3.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-3.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Storage</h5>
                             <p>32GB eMMC</p>
                         </div>
@@ -466,11 +490,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-3.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-3.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Keyboard & TouchPad</h5>
                             <p>Mini Size with Multimedia Keys</p>
                         </div>
@@ -483,11 +507,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Wireless</h5>
                             <p>Wifi 802.11b/g/n</p>
                         </div>
@@ -496,11 +520,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Bluetooth</h5>
                             <p>v4.0</p>
                         </div>
@@ -509,24 +533,24 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Ports</h5>
-                            <p>2 USB, 1 microSD</p>
+                            <p>2 USB, 1 microSD, 1 3.5 mm audio</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>TV Connection</h5>
                             <p>HDMI v1.4, included extension cable</p>
                         </div>
@@ -539,11 +563,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Output Resolution</h5>
                             <p>Full HD 1080P</p>
                         </div>
@@ -552,11 +576,11 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Operating System</h5>
                             <p>Windows<sup>&reg;</sup> 10</p>
                         </div>
@@ -565,13 +589,26 @@
             </div>
             <div class="col-sm-3 col-md-3">
                 <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="service-box">
-                        <!--<div class="service-icon">
-                            <img src="img/icons/service-icon-4.png" alt=""/>
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
                         </div>-->
-                        <div class="service-desc">
+                        <div class="specs-desc">
                             <h5>Power Supply</h5>
                             <p>Input 100~240V, Output 5V 2A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <div class="wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="specs-box">
+                        <!--<div class="specs-icon">
+                            <img src="img/icons/specs-icon-4.png" alt=""/>
+                        </div>-->
+                        <div class="specs-desc">
+                            <h5>Dimensions & Weight</h5>
+                            <p>9cm x 9cm x 2cm, 50gms</p>
                         </div>
                     </div>
                 </div>
@@ -583,7 +620,7 @@
 
 
 <!-- Section: contact -->
-<section id="get" class="home-section text-center">
+<section id="get" class="home-section text-center bg-gray">
     <div class="heading-contact">
         <div class="container">
             <div class="row">
@@ -593,10 +630,11 @@
                             <h2>Get it Now</h2>
                             <p class="get-info">
                                 Early bird registrations open now<br>
-                                Register now to get a 25% discount  <s>&#x20b9; 9999</s>  &#x20b9;7499<br>
+                                Register now to get a 25% discount! Get Zest for  <s class="error">&#x20b9;9999</s>
+                                <span class="success">&#x20b9;7499</span> on launch<br>
                                 Shipping by 15/08/2015
                             </p>
-                            <i class="fa fa-2x fa-angle-down"></i>
+                            <!--<i class="fa fa-2x fa-angle-down"></i>-->
                         </div>
                     </div>
                 </div>
@@ -639,7 +677,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="number">
-                                        MOBILE (No Unwanted Calles/Messages Guaranteed)
+                                        MOBILE (No Unwanted Calls/Messages Guaranteed)
                                     </label>
                                     <input name="number" type="number" id="number" class="form-control" required="required"
                                            placeholder="Enter mobile phone number">
@@ -691,9 +729,27 @@
                 </div>
             </div>-->
         </div>
+    </div>
+    <div class="heading-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow bounceInDown" data-wow-delay="0.4s">
+                        <div class="section-heading">
+                            <h2>Sharing is Caring</h2>
+                            <p class="get-info">
+                            </p>
 
+                            <!--<i class="fa fa-2x fa-angle-down"></i>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
+<!--<div class="fb-share-button" data-href="http://zestpc.com" data-layout="button"></div>-->
 <!-- /Section: contact -->
 
 <footer>

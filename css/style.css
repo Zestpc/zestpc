@@ -486,6 +486,12 @@ small{
 .carousel-inner > .item > a > .carousel-caption2 {
     /*background: rgba(255,255,255,0.7);*/
     color: #666;
+    margin: 25px 0 0 0;
+}
+
+.carousel-inner > .item > .carousel-caption2 > p,
+.carousel-inner > .item > a > .carousel-caption2 > p {
+    font-size: 20px;
 }
 
 .carousel-control{
@@ -513,12 +519,29 @@ small{
     background-color: #009688;
 }
 /* ===========================
---- Services
+--- Features
 ============================ */
 
 .service-icon {
 	margin-bottom: 20px;
-}	
+}
+
+.feature-box{
+    border: 2px solid #009688;
+    /*color: white;*/
+}
+
+.feature-desc > p{
+    font-size: 17px;
+}
+
+.feature-desc > h5{
+    font-size: 20px;
+}
+
+/* ===========================
+--- Specs
+============================ */
 
 
 
