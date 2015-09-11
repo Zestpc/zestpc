@@ -64,11 +64,20 @@
 		saveRegisters();
 	});
 
-	$('.shareButton').on('click',function(e){
-		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html', 'sharer', 'width=626,height=436');;
-	})
+	$('.fbShareButton').on('click',function(e){
+		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html', 'sharer', 'width=626,height=436');
+	});
 
-	$.post(
+	$('.tweetButton').on('click',function(e){
+		window.open('https://twitter.com/intent/tweet?url=http:%3A%2F%2Fzestpc.com%2F&hashtags=MyNextTV','tweeter','width=533,height=398');
+	});
+
+	$('.followButton').on('click',function(e){
+		window.open('https://twitter.com/intent/follow?screen_name=prathamshah','tweeter','width=533,height=398');
+	});
+
+
+	/*$.post(
 		'https://graph.facebook.com',
 		{
 			id: 'http://zestpc.com/index.html',
@@ -77,5 +86,12 @@
 		function(response){
 			console.log(response);
 		}
-	);
+	);*/
+	$(document).ready(function(){
+		$('div.feature-box').hover(function(){
+			$('div.feature-desc').eq($(this).index()).addClass('active').siblings().removeClass('active');
+			$(this).addClass('highlight').siblings().removeClass('highlight');
+		});
+	});
+
 })(jQuery);
