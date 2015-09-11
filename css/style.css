@@ -1,11 +1,18 @@
 /* ==== Google font ==== */
 /*@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');*/
 @font-face {
-    font-family: "Bank Gothic Light BT";
-    src: url('fonts/bgothl.ttf')
+    font-family: "Bank Gothic";
+    src: url('../fonts/bgothl.ttf')
 }
 
-@import "compass/css3";
+@font-face {
+    font-family: 'Geogrotesque';
+    src: url('../fonts/geogrotesque-regular-webfont.eot');
+    src: url('../fonts/geogrotesque-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/geogrotesque-regular-webfont.woff') format('woff'),
+    url('../fonts/geogrotesque-regular-webfont.ttf')  format('truetype'),
+    url('../fonts/geogrotesque-regular-webfont.svg#svgFontName') format('svg');
+}
 
 body {
     width: 100%;
@@ -77,14 +84,16 @@ a:focus {
   line-height: 1em;
     color: #666;
     font-weight: 700;
+
 }
 
 .navbar-brand .title-name{
   color: #666;
-  font-size: 30px;
+  font-size: 45px;
   line-height: 40px;
   font-weight: 900;
-    letter-spacing: 3px;
+    font-family: "Geogrotesque";
+    letter-spacing: 1px;
 }
 
 .navbar-custom.top-nav-collapse .navbar-brand{
@@ -253,7 +262,7 @@ hr {
 .sidemarginbot-10{margin: 0 1px}
 
 /* paddings */
-.paddingbot{
+.paddingbot-5{
     padding: 5px 0;
 }
 
@@ -284,6 +293,8 @@ hr {
 
 .section-heading h2 {
 	font-size: 40px;
+    font-family: "Geogrotesque";
+    letter-spacing: 1px;
 }
 .section-heading i {
 	margin-bottom: 20px;
@@ -336,13 +347,13 @@ hr {
 .info {
     font-size: 25px;
     letter-spacing: 0.2px;
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 5px 15px;
 }
 
 h2{
     color: #009688;
-    text-transform: uppercase;
-    font-weight: 300;
+    text-transform: none;
+    font-weight: 500;
 }
 
 h4{
@@ -376,13 +387,14 @@ h4{
 	text-shadow: none;
 	font-size: 45px;
 	line-height: 60px;
-	/*font-weight: 700;*/
-	/*font-family: Montserrat, sans-serif;*/
+	font-weight: 400;
+	font-family: "Geogrotesque";
 	background-color: rgba(0, 0, 0, 0);
 	text-decoration: none;
 	border-width: 0px;
 	border-color: #000;
 	border-style: none;
+    letter-spacing: 2px;
 	/*text-shadow: -1px 0 1px #000;*/
 }
 
@@ -396,6 +408,11 @@ h4{
 .intro .featured{
     margin: 0px auto 0px auto;
     width: 80%;
+}
+
+.intro .featured img{
+    margin: 0px auto 0px auto;
+    display: block;
 }
 
 small{
@@ -414,54 +431,43 @@ small{
     float: left;
 }
 
-.play-feature {
+.play-title{
+    font-size: 25px;
+}
+
+.play-desc{
+    position: absolute;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+    width:100%;
+    text-align: center;
+    opacity:0;
+    visibility:hidden;
+}
+
+.play-desc.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.play-desc img{
+    width: 60%;
+}
+
+.play-box:hover {
+    color:#009688;
+}
+
+.play-desc > p{
     font-size: 20px;
-    padding: 10px 0px 20px 0px;
-    font-weight: 500;
 }
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-    width: 40%;
-    margin: auto;
+.play-icon{
+    text-align: left;
 }
 
-.carousel-inner > .item > .carousel-caption2,
-.carousel-inner > .item > a > .carousel-caption2 {
-    /*background: rgba(255,255,255,0.7);*/
-    color: #666;
-    margin: 25px 0 0 0;
-}
-
-.carousel-inner > .item > .carousel-caption2 > p,
-.carousel-inner > .item > a > .carousel-caption2 > p {
-    font-size: 20px;
-}
-
-.carousel-control{
-    font-size: 50px;
-    color: #999;
-}
-
-
-.carousel-indicators {
-    bottom:-50px;
-}
-
-.carousel-inner {
-    margin-bottom:50px;
-}
-
-.carousel-indicators li {
-    background-color: #fff;
-    /*background-color: rgba(70,70,70,.25);*/
-    border:1px solid #009688;
-    font-size: 50px;
-}
-
-.carousel-indicators .active {
-    background-color: #009688;
-}
 /* ===========================
 --- Features
 ============================ */
@@ -504,18 +510,43 @@ small{
     font-size: 20px;
 }
 
-.feature-icon img{
-    width: 100%;
-}
-
 .highlight{
     color: #009688;
 }
 
-.hidebot{
-    visibility: hidden;
+.do-box{
+@include transition(400ms);
+    cursor:pointer;
 }
 
+.do-desc{
+    position: absolute;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+    width:100%;
+    text-align: center;
+    opacity:0;
+    visibility:hidden;
+}
+
+.do-desc.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.do-box:hover {
+    color:#009688;
+}
+
+.do-desc > p{
+    font-size: 25px;
+}
+
+.do-title > h5{
+    font-size: 20px;
+}
 /* ===========================
 --- Specs
 ============================ */
@@ -525,6 +556,11 @@ small{
 /* ===========================
 --- Buy
 ============================ */
+
+.boxed-grey {
+    background: #f9f9f9;
+    padding: 20px;
+}
 
 form#buyForm .form-group label {
 	text-align: left !important;
@@ -567,63 +603,6 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
-.widget-contact {
-	text-align: left;
-}
-
-
-.company-social {
-	margin-left: 0;
-	padding-left: 0;
-	margin-top: 10px;
-}
-
-.company-social {
-	text-align: left;
-}
-
-.company-social li{
-    display: inline-block;
-	margin:0 !important;
-	padding:0;
-}
-
-
-.company-social a{
-	margin:0;
-	padding:0;
-    display: block;
-	width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background: #3bbec0;
-	color: #fff;
-    -webkit-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
-}
-.company-social a i{
-	text-align: center;
-	margin:0;
-	padding:0;
-}
-.company-social .social-facebook a{background: #3873ae;}
-.company-social .social-twitter a{background: #62c6f8;}
-.company-social .social-dribble a{background: #d74980;}
-.company-social .social-deviantart a{background: #8da356;}
-.company-social .social-google a{background: #000;}
-.company-social .social-vimeo a{background: #51a6d3;}
-.company-social .social-facebook a:hover{background: #4893ce;}
-.company-social .social-twitter a:hover{background: #82e6ff;}
-.company-social .social-dribble a:hover{background: #f769a0;}
-.company-social .social-deviantart a:hover{background: #adc376;}
-.company-social .social-google a:hover{background: #333;}
-.company-social .social-vimeo a:hover{background: #71c6f3;}
-
-.get-info{
-    font-size: 20px;
-}
-
 /* ===========================
 --- Footer
 ============================ */
@@ -631,7 +610,7 @@ input[type=number] {
 footer {
 	text-align: center;
 	padding: 10px 0 ;
-	
+
 }
 
 footer p {
@@ -643,11 +622,11 @@ footer p {
 Parallax
 ============================= */
 
-#parallax1{	
+#parallax1{
 	background-image: url(../img/parallax/1.jpg);
 }
 
-#parallax1:after {	
+#parallax1:after {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -660,12 +639,12 @@ Parallax
 }
 
 
-#parallax2{	
+#parallax2{
 	background-image: url(../img/parallax/2.jpg);
 
 }
 
-#parallax2:after  {	
+#parallax2:after  {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
 	content: "";
 	position: absolute;
@@ -751,7 +730,7 @@ Parallax
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -768,7 +747,7 @@ Parallax
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -856,7 +835,7 @@ Parallax
     .brand-heading {
         font-size: 100px;
     }
-	
+
 
     .intro-text {
         font-size: 25px;
@@ -865,11 +844,11 @@ Parallax
 
 }
 @media (max-width:768px) {
-	
+
 	.team.boxed-grey {
 		margin-bottom: 30px;
 	}
-	
+
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -880,11 +859,11 @@ Parallax
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
 	}
-	
+
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
-	
+
 	.tp-banner-container {
 		padding-top:40px;
 	}
@@ -898,16 +877,11 @@ Parallax
 		border-radius: 50%;
 		font-size: 20px;
 	}
-	
+
 }
 
 @media (max-width: 1200px) {
     .heightbot {
         height: auto;
     }
-}
-
-.intro-play{
-    height: 100px;
-    background: linear-gradient(#1b113a, #323232);
 }

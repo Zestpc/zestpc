@@ -87,9 +87,24 @@
 			console.log(response);
 		}
 	);*/
+
+	$(document).ready(function(){
+		$('div.play-box').hover(function(){
+			$('div.play-desc').eq($(this).index()).addClass('active').siblings().removeClass('active');
+			$(this).addClass('highlight').siblings().removeClass('highlight');
+		});
+	});
+
 	$(document).ready(function(){
 		$('div.feature-box').hover(function(){
 			$('div.feature-desc').eq($(this).index()).addClass('active').siblings().removeClass('active');
+			$(this).addClass('highlight').siblings().removeClass('highlight');
+		});
+	});
+
+	$(document).ready(function(){
+		$('div.do-box').hover(function(){
+			$('div.do-desc').eq($(this).index()).addClass('active').siblings().removeClass('active');
 			$(this).addClass('highlight').siblings().removeClass('highlight');
 		});
 	});
