@@ -15,7 +15,7 @@
 }
 
 .wow {
-    visibility: hidden;
+    visibility: visible !important;
 }
 
 body {
@@ -278,7 +278,7 @@ hr {
     padding: 25px 0;
 }
 
-.paddingbot-55{
+.paddingbot-65{
     padding: 55px 0;
 }
 
@@ -391,7 +391,7 @@ h4{
 .intro .intro-text h2 {
 	text-shadow: none;
 	font-size: 25px;
-	line-height: 60px;
+	/*line-height: 60px;*/
 	font-weight: 400;
 	font-family: "Geogrotesque";
     color: #205236;
@@ -548,6 +548,24 @@ h4{
     font-size: 20px;
 }
 
+@media (max-width: 767px) {
+    .feature-box{
+        color: #009688;
+    }
+
+    .feature-desc > p{
+        font-size: 20px;
+    }
+
+    .feature-title > h5{
+        font-size: 15px;
+    }
+
+    .feature-icon{
+        font-size: 5px;
+    }
+}
+
 .highlight{
     color: #009688;
 }
@@ -585,6 +603,20 @@ h4{
 
 .do-title > h5{
     font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .do-box{
+        color: #009688;
+    }
+
+    .do-desc > p{
+        font-size: 20px;
+    }
+
+    .do-title > h5{
+        font-size: 15px;
+    }
 }
 
 .fa-graduation-cap{
