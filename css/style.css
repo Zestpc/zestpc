@@ -378,30 +378,6 @@ h4{
     background: radial-gradient(farthest-side at 80% 55%, #8744e8, #5133AB);*/
 }
 
-.intro .slant {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 55%;
-    height: 100%;
-    background: #3cffce;
-    -webkit-transform: skewX(30deg);
-    -moz-transform: skewX(30deg);
-    -ms-transform: skewX(30deg);
-    -o-transform: skewX(30deg);
-    transform: skewX(30deg);
-    /*z-index: -30;*/
-}
-
-.intro .background{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 20%;
-    height: 100%;
-    background: #3cffce;
-}
-
 #intro.intro {
 	padding:120px 0 80px 0;
 }
@@ -410,12 +386,11 @@ h4{
 	text-align: center;
     margin: 30px 0 0 0;
     position: relative;
-    left: 90px;
 }
 
 .intro .intro-text h2 {
 	text-shadow: none;
-	font-size: 45px;
+	font-size: 25px;
 	line-height: 60px;
 	font-weight: 400;
 	font-family: "Geogrotesque";
@@ -426,17 +401,14 @@ h4{
 	border-color: #000;
 	border-style: none;
     letter-spacing: 2px;
-	/*text-shadow: -1px 0 1px #000;*/
 }
 
 .intro .intro-text h4 {
 	color: #666;
     color: #205236;
     font-weight: 300;
-	/*text-shadow: -1px 1px 1px #000;*/
     text-transform: none;
-    font-size: 25px;
-    /*white-space: nowrap;*/
+    font-size: 20px;
 }
 
 .intro .featured{
@@ -445,8 +417,43 @@ h4{
     z-index: -100!important;
 }
 
-small{
-    float: right;
+@media (min-width: 991px) {
+    .intro .slant {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 55%;
+        height: 100%;
+        background: #3cffce;
+        -webkit-transform: skewX(30deg);
+        -moz-transform: skewX(30deg);
+        -ms-transform: skewX(30deg);
+        -o-transform: skewX(30deg);
+        transform: skewX(30deg);
+        /*z-index: -30;*/
+    }
+
+    .intro .background{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 20%;
+        height: 100%;
+        background: #3cffce;
+    }
+
+    .intro .intro-text{
+        left: 90px;
+    }
+
+    .intro .intro-text h2 {
+        font-size: 45px;
+    }
+
+    .intro .intro-text h4 {
+        white-space: nowrap;
+        font-size: 25px;
+    }
 }
 
 /* ===========================
@@ -517,7 +524,8 @@ small{
     -moz-transition: 400ms;
     -o-transition: 400ms;
     transition: 400ms;
-    width:100%;
+    left: 0px;
+    right: 0px;
     text-align: center;
     opacity:0;
     visibility:hidden;
@@ -555,7 +563,8 @@ small{
     -moz-transition: 400ms;
     -o-transition: 400ms;
     transition: 400ms;
-    width:100%;
+    left: 0px;
+    right: 0px;
     text-align: center;
     opacity:0;
     visibility:hidden;
