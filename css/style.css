@@ -436,7 +436,7 @@ h4{
 	/*text-shadow: -1px 1px 1px #000;*/
     text-transform: none;
     font-size: 25px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 }
 
 .intro .featured{
