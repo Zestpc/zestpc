@@ -549,16 +549,12 @@ h4{
 }
 
 @media (max-width: 767px) {
-    .feature-box{
-        color: #009688;
-    }
-
     .feature-desc > p{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .feature-title > h5{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .feature-icon{
@@ -606,16 +602,16 @@ h4{
 }
 
 @media (max-width: 767px) {
-    .do-box{
-        color: #009688;
-    }
-
     .do-desc > p{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .do-title > h5{
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .do-icon{
+        font-size: 5px;
     }
 }
 
