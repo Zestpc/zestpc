@@ -160,6 +160,10 @@ a:focus {
 .navbar-toggle {
     padding: 4px 6px;
     font-size: 14px;
+    color: #000;
+}
+
+.top-nav-collapse .navbar-toggle{
     color: #fff;
 }
 
@@ -306,40 +310,9 @@ hr {
 
 
 /*Background Colors*/
-.bg-orange{
-    background: #e65100;
-}
-
-.bg-indigo{
-    background: #536DFE;
-}
-
-.bg-yellow{
-    background: #ff8f00;
-}
-
-.bg-red{
-    background: #D32F2F;
-}
-
-.bg-purple{
-    background: #7e3878;
-}
-
-.bg-white {
-	background: #fff;
-}
 
 .bg-gray {
 	background: #f8f8f8;
-}
-
-.bg-darkgray {
-    background: #F8F8F8;
-}
-
-.bg-dark {
-	background: #575757;
 }
 
 /* --- section color var --- */
@@ -349,7 +322,7 @@ hr {
 }
 
 .info {
-    font-size: 25px;
+    font-size: 18px;
     letter-spacing: 0.2px;
     padding: 0 15px 5px 15px;
 }
@@ -603,7 +576,7 @@ h4{
 
 @media (max-width: 767px) {
     .do-desc > p{
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .do-title > h5{
@@ -657,6 +630,11 @@ form#buyForm input:focus,form#buyForm select:focus,form#buyForm textarea:focus {
   border-radius: 0;
 }
 
+.price{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
 .success{
     color: #009688;
 }
@@ -675,6 +653,44 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
+.share-box{
+    cursor: pointer;
+}
+
+.share-desc.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.share-box:hover {
+    color:#009688;
+}
+
+.share-desc > p{
+    font-size: 25px;
+}
+
+.share-title > h5{
+    font-size: 20px;
+}
+
+.share-icon{
+    font-size: 10px;
+}
+
+@media (max-width: 767px) {
+    .share-desc > p{
+        font-size: 16px;
+    }
+
+    .share-title > h5{
+        font-size: 16px;
+    }
+
+    .share-icon{
+        font-size: 5px;
+    }
+}
 /* ===========================
 --- Footer
 ============================ */
@@ -682,50 +698,13 @@ input[type=number] {
 footer {
 	text-align: center;
 	padding: 10px 0 ;
+    background-color: #009688;
 
 }
 
 footer p {
 	color: #f8f8f8;
     margin: 0px;
-}
-
-/* ==========================
-Parallax
-============================= */
-
-#parallax1{
-	background-image: url(../img/parallax/1.jpg);
-}
-
-#parallax1:after {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	opacity: 0.7;
-	z-index: -1;
-}
-
-
-#parallax2{
-	background-image: url(../img/parallax/2.jpg);
-
-}
-
-#parallax2:after  {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWNgYGD4z0AswK4SAFXuAf8EPy+xAAAAAElFTkSuQmCC);
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	opacity: 0.7;
-	z-index: -1;
 }
 
 
@@ -743,109 +722,11 @@ Parallax
     transition: all .3s ease-in-out;
 }
 
-
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font-size: 40px;
+.btn-skin {
     color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    background-color: #009688;
+    border-color: #009688;
 }
-
-.btn-circle.btn-dark {
-    border: 2px solid #666;
-    color: #666;
-}
-
-
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
-}
-
-.btn-circle.btn-dark :hover,
-.btn-circle.btn-dark :focus {
-    outline: 0;
-    color: #999;
-    background: #fff;
-}
-
-.btn-circle.btn-dark :hover i,
-.btn-circle.btn-dark :focus i{
-    color: #999;
-}
-
-.page-scroll .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes pulse {
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-
-#text {
-    color: #fff;
-    background: #ffcc00;
-}
-
-#map {
-	height: 500px;
-}
-
 
 .btn-skin:hover,
 .btn-skin:focus,
@@ -855,26 +736,6 @@ Parallax
   background-color: #666;
   border-color: #666;
 }
-
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #28c3ab;
-    outline: 0;
-    color: #000;
-    background-color: #28c3ab;
-}
-
-.btn-huge {
-    padding: 25px;
-    font-size: 26px;
-}
-
-.banner-social-buttons {
-    margin-top: 0;
-}
-
-
 
 /* Media queries */
 
@@ -899,16 +760,6 @@ Parallax
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
 
-    .heightbot {
-        height: 100%;
-        /*padding: 0;*/
-    }
-
-    .brand-heading {
-        font-size: 100px;
-    }
-
-
     .intro-text {
         font-size: 25px;
     }
@@ -916,11 +767,6 @@ Parallax
 
 }
 @media (max-width:768px) {
-
-	.team.boxed-grey {
-		margin-bottom: 30px;
-	}
-
 	.boxed-grey {
 		margin-bottom: 30px;
 	}
@@ -935,25 +781,8 @@ Parallax
 	.navbar.navbar-custom.navbar-fixed-top {
 		margin-bottom: 30px;
 	}
-
-	.tp-banner-container {
-		padding-top:40px;
-	}
-
-	.page-scroll a.btn-circle {
-		width: 40px;
-		height: 40px;
-		margin-top: 10px;
-		padding: 7px 0;
-		border: 2px solid #fff;
-		border-radius: 50%;
-		font-size: 20px;
-	}
-
 }
 
-@media (max-width: 1200px) {
-    .heightbot {
-        height: auto;
-    }
+.top-nav-collapse {
+    background-color: #009688;
 }

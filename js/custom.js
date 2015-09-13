@@ -91,17 +91,9 @@
 	);*/
 
 	$(document).ready(function(){
-		if(viewport().width <= 767){
-			/*autoDesc('.feature-box','.feature-desc');
-			autoDesc('.do-box','.do-desc');*/
-			hoverDesc('.feature-box','.feature-desc');
-			hoverDesc('.do-box','.do-desc');
-		}
-		else{
-			hoverDesc('.play-box','.play-desc');
-			hoverDesc('.feature-box','.feature-desc');
-			hoverDesc('.do-box','.do-desc');
-		}
+		hoverDesc('.play-box','.play-desc');
+		hoverDesc('.feature-box','.feature-desc');
+		hoverDesc('.do-box','.do-desc');
 	});
 
 	function autoDesc(a,b){
