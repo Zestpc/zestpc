@@ -91,7 +91,7 @@
 	);*/
 
 	$(document).ready(function(){
-		hoverDesc('.play-box','.play-desc');
+		//hoverDesc('.play-box','.play-desc');
 		hoverDesc('.feature-box','.feature-desc');
 		hoverDesc('.do-box','.do-desc');
 	});
