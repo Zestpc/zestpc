@@ -94,6 +94,14 @@
 		//hoverDesc('.play-box','.play-desc');
 		hoverDesc('.feature-box','.feature-desc');
 		hoverDesc('.do-box','.do-desc');
+		$('.play-box').hover(
+			function(){
+				$(this).find('.play-desc').slideDown(250); //.fadeIn(250)
+			},
+			function(){
+				$(this).find('.play-desc').slideUp(250); //.fadeOut(205)
+			}
+		);
 	});
 
 	function autoDesc(a,b){

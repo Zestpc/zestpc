@@ -442,7 +442,8 @@ h4{
 }
 
 .play-title{
-    font-size: 25px;
+    font-size: 35px;
+    margin: 15px 0 10px 0;
 }
 
 /*.play-desc{
@@ -457,27 +458,35 @@ h4{
     visibility:hidden;
 }*/
 
-.play-desc.active{
-    opacity:1;
-    visibility:visible;
+.play-box{
+    position: relative;
+    overflow: hidden;
 }
 
-.play-desc img{
-    width: 60%;
+.play-box img{
+    width: 100%;
 }
 
-/*.play-box:hover {
-    color:#009688;
-}*/
+.play-desc{
+    position:absolute;
+    left: 0;
+    top:0;
+    right:0;
+    bottom: 0;
+    background:rgba(0, 150, 136, 0.95);
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+}
 
-.play-desc > p{
+.play-desc p{
     font-size: 20px;
+    text-align: justify;
 }
-
-.play-icon{
-    text-align: left;
-}
-
 /* ===========================
 --- Features
 ============================ */
