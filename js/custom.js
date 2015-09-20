@@ -92,40 +92,36 @@
 
 	$(document).ready(function(){
 		//hoverDesc('.play-box','.play-desc');
-		hoverDesc('.feature-box','.feature-desc');
-		hoverDesc('.do-box','.do-desc');
-		$('.play-box').hover(
-			function(){
-				$(this).find('.play-desc').slideDown(250); //.fadeIn(250)
-			},
-			function(){
-				$(this).find('.play-desc').slideUp(250); //.fadeOut(205)
-			}
-		);
+		autoClick('.feature-box','.feature-desc');
+		autoClick('.do-box','.do-desc');
 	});
 
-	function autoDesc(a,b){
-		var delay = 4000, fade = 400;
+	function autoClick(a,b){
 		var i = 0;
 		var len = $(a).length;
-		$(a).hide();
-		function cycle(){
-			$($(a)[i%len]).fadeOut(fade, function() {
-				$(b).eq(++i%len).addClass('active').siblings().removeClass('active');
-				$($(a)[i%len]).fadeIn(fade, function() {
-					setTimeout(cycle, delay);
-				});
-			});
+		function auto(){
+			transitionEffect(a,b,++i%len);
 		}
-		setTimeout(cycle,delay);
+		var myAuto = setInterval(auto,5000);
+		$(a).click(function () {
+			clearTimeout(myAuto);
+			i = $(this).index();
+			transitionEffect(a,b,i);
+			myAuto = setInterval(auto,5000);
+		});
 	}
 
-	function hoverDesc(a,b){
+	function transitionEffect(a,b,i){
+		$(b).eq(i).addClass('active').siblings().removeClass('active');
+		$($(a)[i]).addClass('highlight').siblings().removeClass('highlight');
+	}
+
+	/*function hoverDesc(a,b){
 		$(a).hover(function(){
 			$(b).eq($(this).index()).addClass('active').siblings().removeClass('active');
 			$(this).addClass('highlight').siblings().removeClass('highlight');
 		});
-	}
+	}*/
 
 	function viewport() {
 		var e = window, a = 'inner';
@@ -135,7 +131,4 @@
 		}
 		return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
 	}
-
-
-
 })(jQuery);

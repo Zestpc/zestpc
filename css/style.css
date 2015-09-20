@@ -14,6 +14,12 @@
     url('../fonts/geogrotesque-regular-webfont.svg#svgFontName') format('svg');
 }
 
+.fa-infinity:before {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial !important;
+    content: '\221E';
+    speak: none;
+}
+
 .wow {
     visibility: visible !important;
 }
@@ -461,6 +467,7 @@ h4{
 .play-box{
     position: relative;
     overflow: hidden;
+    margin: 0 0 40px 0;
 }
 
 .play-box img{
@@ -469,23 +476,43 @@ h4{
 
 .play-desc{
     position:absolute;
-    left: 0;
-    top:0;
+    left: 0px;
+    /*top:0;*/
     right:0;
-    bottom: 0;
+    bottom: -300px;
     background:rgba(0, 150, 136, 0.95);
     width:100%;
-    height:100%;
+    height:auto;
     padding:2%;
-    display: none;
+    /*display: none;*/
     text-align:center;
     color:#fff !important;
     z-index:2;
+    transition: 1s;
+}
+
+.play-box:hover .play-desc{
+    transition: 1s;
+    bottom: 0;
 }
 
 .play-desc p{
     font-size: 20px;
     text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .play-desc > p{
+        font-size: 15px;
+    }
+
+    .play-title{
+        font-size: 16px;
+    }
+
+    .play-icon{
+        font-size: 5px;
+    }
 }
 /* ===========================
 --- Features
@@ -496,8 +523,11 @@ h4{
 }
 
 .feature-box{
-    @include transition(400ms);
     cursor:pointer;
+}
+
+.feature-box:hover{
+    opacity: 0.75;
 }
 
 .feature-desc{
@@ -517,10 +547,6 @@ h4{
     opacity:1;
     visibility:visible;
 }
-
-.feature-box:hover {
-     color:#009688;
- }
 
 .feature-desc > p{
     font-size: 25px;
@@ -546,11 +572,18 @@ h4{
 
 .highlight{
     color: #009688;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
 }
 
 .do-box{
-@include transition(400ms);
-    cursor:pointer;
+    cursor: pointer;
+}
+
+.do-box:hover{
+    opacity: 0.75;
 }
 
 .do-desc{
@@ -569,10 +602,6 @@ h4{
 .do-desc.active{
     opacity:1;
     visibility:visible;
-}
-
-.do-box:hover {
-    color:#009688;
 }
 
 .do-desc > p{
