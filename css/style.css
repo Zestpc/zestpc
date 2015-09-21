@@ -20,6 +20,12 @@
     speak: none;
 }
 
+.fa-HD:before {
+    font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial !important;
+    content: 'HD';
+    speak: none;
+}
+
 .wow {
     visibility: visible !important;
 }
@@ -439,6 +445,18 @@ h4{
 --- Play
 ============================ */
 
+.my-hide{
+    visibility: hidden;
+}
+
+.my-hide > p{
+    font-size: 25px;
+}
+
+.my-hide > img{
+    width: 80%;
+}
+
 .play{
     background-color: #323232;
 }
@@ -447,13 +465,13 @@ h4{
     float: left;
 }
 
-.play-title{
-    font-size: 35px;
-    margin: 15px 0 10px 0;
+.play-title h5{
+    font-size: 20px;
 }
 
-/*.play-desc{
+.play-desc{
     position: absolute;
+    top: 0;
     -webkit-transition: 400ms;
     -moz-transition: 400ms;
     -o-transition: 400ms;
@@ -462,29 +480,56 @@ h4{
     text-align: center;
     opacity:0;
     visibility:hidden;
-}*/
+}
+
+.play-desc.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.play-image{
+    position: absolute;
+    top: 0;
+    -webkit-transition: 400ms;
+    -moz-transition: 400ms;
+    -o-transition: 400ms;
+    transition: 400ms;
+    width:100%;
+    text-align: center;
+    opacity:0;
+    visibility:hidden;
+}
+
+.play-image.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.play-image img{
+    width: 80%;
+}
 
 .play-box{
     position: relative;
     overflow: hidden;
-    margin: 0 0 40px 0;
+    margin: 0 0 0 0;
+    cursor: pointer;
 }
 
-.play-box img{
+/*.play-box img{
     width: 100%;
 }
 
 .play-desc{
     position:absolute;
     left: 0px;
-    /*top:0;*/
     right:0;
     bottom: -300px;
     background:rgba(0, 150, 136, 0.95);
     width:100%;
     height:auto;
     padding:2%;
-    /*display: none;*/
+    /!*display: none;*!/
     text-align:center;
     color:#fff !important;
     z-index:2;
@@ -494,11 +539,15 @@ h4{
 .play-box:hover .play-desc{
     transition: 1s;
     bottom: 0;
+}*/
+
+.play-desc > p{
+    font-size: 20px;
+    text-align: center;
 }
 
-.play-desc p{
-    font-size: 20px;
-    text-align: justify;
+.play-icon{
+    font-size: 5px;
 }
 
 @media (max-width: 767px) {
@@ -538,6 +587,7 @@ h4{
     transition: 400ms;
     left: 0px;
     right: 0px;
+    top: 0px;
     text-align: center;
     opacity:0;
     visibility:hidden;
@@ -594,6 +644,7 @@ h4{
     transition: 400ms;
     left: 0px;
     right: 0px;
+    top: 0px;
     text-align: center;
     opacity:0;
     visibility:hidden;
@@ -743,6 +794,10 @@ footer {
 footer p {
 	color: #f8f8f8;
     margin: 0px;
+}
+
+footer small{
+    color: white;
 }
 
 

@@ -91,23 +91,24 @@
 	);*/
 
 	$(document).ready(function(){
-		//hoverDesc('.play-box','.play-desc');
-		autoClick('.feature-box','.feature-desc');
-		autoClick('.do-box','.do-desc');
+		autoClick('.play-box','.play-desc',10000);
+		autoClick('.play-box','.play-image',10000);
+		autoClick('.feature-box','.feature-desc',5000);
+		autoClick('.do-box','.do-desc',5000);
 	});
 
-	function autoClick(a,b){
+	function autoClick(a,b,c){
 		var i = 0;
 		var len = $(a).length;
 		function auto(){
 			transitionEffect(a,b,++i%len);
 		}
-		var myAuto = setInterval(auto,5000);
+		var myAuto = setInterval(auto,c);
 		$(a).click(function () {
 			clearTimeout(myAuto);
 			i = $(this).index();
 			transitionEffect(a,b,i);
-			myAuto = setInterval(auto,5000);
+			myAuto = setInterval(auto,c);
 		});
 	}
 
