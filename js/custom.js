@@ -67,15 +67,19 @@
 	});
 
 	$('.fbShareButton').on('click',function(e){
-		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html', 'sharer', 'width=626,height=436');
+		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html');
+	});
+
+	$('.fbLikeButton').on('click',function(e){
+		window.open('https://www.facebook.com/pczest');
 	});
 
 	$('.tweetButton').on('click',function(e){
-		window.open('https://twitter.com/intent/tweet?url=http:%3A%2F%2Fzestpc.com%2F&hashtags=MyNextTV','tweeter','width=533,height=398');
+		window.open('https://twitter.com/intent/tweet?text=@zestpc');
 	});
 
 	$('.followButton').on('click',function(e){
-		window.open('https://twitter.com/intent/follow?screen_name=prathamshah','tweeter','width=533,height=398');
+		window.open('https://twitter.com/intent/follow?screen_name=zestpc');
 	});
 
 
