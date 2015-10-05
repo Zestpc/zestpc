@@ -203,7 +203,7 @@ a:focus {
 }
 
 
-#loaderInner {
+/*#loaderInner {
     background:#ffffff url(../img/spinner.gif) center center no-repeat;
     height: 60px;
     left: 50%;
@@ -211,7 +211,7 @@ a:focus {
     position: absolute;
     top: 50%;
     width: 60px;
-}
+}*/
 
 @keyframes boxSpin{
   0%{
@@ -264,7 +264,7 @@ a:focus {
   border-radius: 0px;
   border: 5px solid #FF4136;
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
-  animation: shadowSpin 1s ease-in-out infinite;
+  animation: boxSpin 1s ease-in-out infinite;
 }
 
 /* misc */
@@ -282,6 +282,10 @@ hr {
 .sidemarginbot-10{margin: 0 1px}
 
 /* paddings */
+.paddingbot-0{
+    padding: 0;
+}
+
 .paddingbot-5{
     padding: 5px 0;
 }
@@ -476,7 +480,6 @@ h4{
     -moz-transition: 400ms;
     -o-transition: 400ms;
     transition: 400ms;
-    width:100%;
     text-align: center;
     opacity:0;
     visibility:hidden;
@@ -515,31 +518,6 @@ h4{
     margin: 0 0 0 0;
     cursor: pointer;
 }
-
-/*.play-box img{
-    width: 100%;
-}
-
-.play-desc{
-    position:absolute;
-    left: 0px;
-    right:0;
-    bottom: -300px;
-    background:rgba(0, 150, 136, 0.95);
-    width:100%;
-    height:auto;
-    padding:2%;
-    /!*display: none;*!/
-    text-align:center;
-    color:#fff !important;
-    z-index:2;
-    transition: 1s;
-}
-
-.play-box:hover .play-desc{
-    transition: 1s;
-    bottom: 0;
-}*/
 
 .play-desc > p{
     font-size: 20px;
