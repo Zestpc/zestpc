@@ -191,7 +191,7 @@ a:focus {
 
 /* loader */
 #preloader {
-    background: #ffffff;
+    background: #fff;
     bottom: 0;
     height: 100%;
     left: 0;
@@ -264,7 +264,7 @@ a:focus {
   border-radius: 0px;
   border: 5px solid #FF4136;
   box-shadow: 10px 0px #39CCCC, 10px 0px #01FF70;
-  animation: boxSpin 1s ease-in-out infinite;
+  animation: shadowSpin 1s ease-in-out infinite;
 }
 
 /* misc */
