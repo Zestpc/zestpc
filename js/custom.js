@@ -42,17 +42,19 @@
 	function saveRegisters(){
 		var registration = new Registration();
 
-		registration.set("name", $("#name").val());
+		registration.set("name", $("#name").val().toLowerCase().replace(/^[\u00C0-\u1FFF\u2C00-\uD7FF\w]|\s[\u00C0-\u1FFF\u2C00-\uD7FF\w]/g, function(letter) {
+			return letter.toUpperCase();
+		}));
 		registration.set("email", $("#email").val());
 		registration.set("city", $("#city").val());
 		registration.set("number", $("#number").val());
 
 		var callback = {
-			success:function(){
+			success:function(e){
 				$('#response').html('Registered Successfully. Thanks for the support!').addClass('success').fadeIn('fast');
 			},
 			error: function(){
-				$('#response').html('Oops! Something went wrong').addClass('error').fadeIn('fast');
+				$('#response').html('Uh Oh, something went wrong').addClass('error').fadeIn('fast');
 			}
 		};
 
