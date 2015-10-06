@@ -67,7 +67,7 @@
 	});
 
 	$('.fbShareButton').on('click',function(e){
-		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/index.html');
+		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/');
 	});
 
 	$('.fbLikeButton').on('click',function(e){
@@ -84,6 +84,17 @@
 
 
 	/*$.post(
+		'https://graph.facebook.com',
+		{
+			id: 'http://zestpc.com/',
+			scrape: true
+		},
+		function(response){
+			console.log(response);
+		}
+	);
+
+	$.post(
 		'https://graph.facebook.com',
 		{
 			id: 'http://zestpc.com/index.html',
