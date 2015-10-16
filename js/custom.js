@@ -147,4 +147,27 @@
 		}
 		return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
 	}
+
+	/*var body = {
+		'name':'Pratham',
+		'email':'1pratham@gmail.com'
+	};
+
+	$.ajax({
+		type:'POST',
+		url:'https://app.mailerlite.com/api/v1/subscribers/2620486/?apiKey=b94fe876d91110e7ac1083df1e9e009c&',
+		headers:{
+			'Content-Type': 'application/x-www-form-urlencoded'
+		},
+		body:'email=pratham@zestpc.com&name=Pratham+Shah4&fields[Number]=8884255331',
+		success: function(httpResponse){
+			console.log(httpResponse);
+		},
+		error: function(httpResponse){
+			console.log(httpResponse);
+		}
+	});
+
+	console.log(body['name']);*/
+
 })(jQuery);
