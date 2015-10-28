@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Bank Gothic Light BT";
+    src: url('../fonts/bgothl.eot');
     src: url('../fonts/bgothl.eot?#iefix') format('embedded-opentype');
     src: url('../fonts/bgothl.woff') format('woff'),
     url('../fonts/bgothl.ttf') format('truetype');
