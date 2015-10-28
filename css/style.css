@@ -1,10 +1,9 @@
-/* ==== Google font ==== */
-/*@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');*/
 @font-face {
-    font-family: "Bank Gothic";
-    src: url('../fonts/bgothl.ttf')
+    font-family: "Bank Gothic Light BT";
+    src: url('../fonts/bgothl.eot?#iefix') format('embedded-opentype');
+    src: url('../fonts/bgothl.woff') format('woff'),
+    url('../fonts/bgothl.ttf') format('truetype');
 }
-
 @font-face {
     font-family: 'Geogrotesque';
     src: url('../fonts/geogrotesque-regular-webfont.eot');
