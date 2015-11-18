@@ -82,6 +82,11 @@
 		window.open('https://twitter.com/intent/follow?screen_name=zestpc');
 	});
 
+	$.get( "ajax/test.html", function( data ) {
+		$( ".result" ).html( data );
+		alert( "Load was performed." );
+	});
+
 
 	/*$.post(
 		'https://graph.facebook.com',
