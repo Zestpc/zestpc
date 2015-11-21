@@ -7,6 +7,8 @@
 		new WOW().init();
 	});
 
+	$("img.lazy").lazyload();
+
 
 	//jQuery to collapse the navbar on scroll
 	$(window).scroll(function() {
