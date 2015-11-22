@@ -107,9 +107,9 @@ a:focus {
   color: #666;
   font-size: 45px;
   line-height: 40px;
-  font-weight: 900;
-    font-family: "Bank Gothic Light BT";
-    letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Bank Gothic Light BT";
+  letter-spacing: 1px;
 }
 
 .navbar-custom.top-nav-collapse .navbar-brand{
@@ -141,7 +141,16 @@ a:focus {
 	font-weight: 700;
 }
 
+.navbar-custom ul.nav li a.buy-btn{
+    color: #fff;
+    background-color: #009688;
+}
 
+.navbar-custom ul.nav li a.buy-btn:hover{
+    color: #fff;
+    background-color: #666;
+    border-color: #666;
+}
 
 .navbar-custom.top-nav-collapse ul.nav li a {
 	    -webkit-transition: all .2s ease-in-out;
@@ -150,21 +159,21 @@ a:focus {
 	color: #fff;
 }
 
-.navbar-custom .nav li a {
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+.navbar-custom.top-nav-collapse ul.nav li a.buy-btn{
+    color: #fff;
 }
 
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li.active {
-    outline: 0;
+.navbar-custom .nav li a:hover {
     background-color: rgba(255,255,255,.2);
 }
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
+
 .navbar-custom .nav li.active {
+    background-color: rgba(255,255,255,0);
+}
+
+.navbar-custom.top-nav-collapse .nav li a:hover,
+.navbar-custom.top-nav-collapse .nav li a:focus,
+.navbar-custom.top-nav-collapse .nav li.active {
     outline: 0;
     background-color: rgba(255,255,255,.2);
 }
@@ -202,17 +211,6 @@ a:focus {
     z-index: 999;
 }
 
-
-/*#loaderInner {
-    background:#ffffff url(../img/spinner.gif) center center no-repeat;
-    height: 60px;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    position: absolute;
-    top: 50%;
-    width: 60px;
-}*/
-
 @keyframes boxSpin{
   0%{
     transform: translate(-10px, 0px);
@@ -230,7 +228,6 @@ a:focus {
     transform: translate(-10px, 10px);
   }
 }
-
 
 @keyframes shadowSpin{
   0%{
@@ -806,6 +803,12 @@ footer small{
   color: #fff;
   background-color: #666;
   border-color: #666;
+}
+
+.get-btn{
+    font-size: 20px;
+    /*text-transform: none;*/
+    padding: 10px 30px;
 }
 
 /* Media queries */

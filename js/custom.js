@@ -1,14 +1,11 @@
 (function ($) {
 
-	jQuery(window).load(function() {
-		jQuery("#preloader").delay(100).fadeOut("slow");
-		jQuery("#load").delay(100).fadeOut("slow");
+	$(window).load(function() {
+		$("#preloader").delay(100).fadeOut("slow");
+		$("#load").delay(100).fadeOut("slow");
 		//setTimeout(function(){new WOW().init();}, 1000);
 		new WOW().init();
 	});
-
-	$("img.lazy").lazyload();
-
 
 	//jQuery to collapse the navbar on scroll
 	$(window).scroll(function() {
@@ -99,17 +96,6 @@
 		function(response){
 			console.log(response);
 		}
-	);
-
-	$.post(
-		'https://graph.facebook.com',
-		{
-			id: 'http://zestpc.com/index.html',
-			scrape: true
-		},
-		function(response){
-			console.log(response);
-		}
 	);*/
 
 	$(document).ready(function(){
@@ -139,13 +125,6 @@
 		$($(a)[i]).addClass('highlight').siblings().removeClass('highlight');
 	}
 
-	/*function hoverDesc(a,b){
-		$(a).hover(function(){
-			$(b).eq($(this).index()).addClass('active').siblings().removeClass('active');
-			$(this).addClass('highlight').siblings().removeClass('highlight');
-		});
-	}*/
-
 	function viewport() {
 		var e = window, a = 'inner';
 		if (!('innerWidth' in window )) {
@@ -154,27 +133,5 @@
 		}
 		return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
 	}
-
-	/*var body = {
-		'name':'Pratham',
-		'email':'1pratham@gmail.com'
-	};
-
-	$.ajax({
-		type:'POST',
-		url:'https://app.mailerlite.com/api/v1/subscribers/2620486/?apiKey=b94fe876d91110e7ac1083df1e9e009c&',
-		headers:{
-			'Content-Type': 'application/x-www-form-urlencoded'
-		},
-		body:'email=pratham@zestpc.com&name=Pratham+Shah4&fields[Number]=8884255331',
-		success: function(httpResponse){
-			console.log(httpResponse);
-		},
-		error: function(httpResponse){
-			console.log(httpResponse);
-		}
-	});
-
-	console.log(body['name']);*/
 
 })(jQuery);
