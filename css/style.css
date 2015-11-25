@@ -44,6 +44,11 @@ html {
     height: 100%;
 }
 
+.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 h1,
 h2,
 h3,
