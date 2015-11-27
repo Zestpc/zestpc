@@ -253,7 +253,7 @@ a:focus {
 }
 
 #load {
-	z-index: 9999;
+  z-index: 9999;
   background-color: #009688;
   opacity: 0.75;
   width: 10px;
