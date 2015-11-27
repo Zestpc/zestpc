@@ -776,6 +776,14 @@ footer p {
     margin: 0px;
 }
 
+footer a{
+    color: #fff;
+}
+
+footer a:hover{
+    color: #fff;
+}
+
 footer small{
     color: white;
 }
