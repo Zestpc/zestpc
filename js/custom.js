@@ -3,8 +3,6 @@
 	$(window).load(function() {
 		$("#preloader").delay(100).fadeOut("slow");
 		$("#load").delay(100).fadeOut("slow");
-		//setTimeout(function(){new WOW().init();}, 1000);
-		new WOW().init();
 	});
 
 	//jQuery to collapse the navbar on scroll
