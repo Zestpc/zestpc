@@ -117,6 +117,16 @@ a:focus {
   letter-spacing: 1px;
 }
 
+@media (max-width: 767px) {
+  .navbar-brand .title-name{
+      font-size: 35px;
+  }
+
+  .navbar-brand{
+      font-size: 12px;
+  }
+}
+
 .navbar-custom.top-nav-collapse .navbar-brand{
     color: #fff;
 }
