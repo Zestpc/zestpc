@@ -31,6 +31,15 @@
 		});
 	});
 
+	$(function() {
+		if($(window).width() <= 767) {
+			$( "#featured-images" ).load( "featured-images-mob.html" );
+		}
+		else{
+			$( "#featured-images" ).load( "featured-images-normal.html" );
+		}
+	});
+
 	/*var Registration = Parse.Object.extend("Registration");
 
 	function saveRegisters(){
@@ -98,6 +107,7 @@
 		autoClick('.play-box','.play-image',10000);
 		autoClick('.feature-box','.feature-desc',5000);
 		autoClick('.do-box','.do-desc',5000);
+		autoClick('.featured-box','.featured-image',10000);
 	});
 
 	function autoClick(a,b,c){
