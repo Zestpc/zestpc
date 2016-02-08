@@ -40,7 +40,9 @@
 		}
 	});
 
-	/*var Registration = Parse.Object.extend("Registration");
+    Parse.initialize("GFFNw5yzAcReEiVN7h5Poqj1G6QGDbeZqgcmZMrl", "g6cIiYa4DkkxiUMCCogf8ASspdAFQFIRbcRJ1eGf");
+
+	var Registration = Parse.Object.extend("Registration");
 
 	function saveRegisters(){
 		var registration = new Registration();
@@ -67,7 +69,7 @@
 	$("#buyForm").on("submit", function(e) {
 		e.preventDefault();
 		saveRegisters();
-	});*/
+	});
 
 	$('.fbShareButton').on('click',function(e){
 		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/');
