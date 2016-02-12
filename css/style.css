@@ -352,6 +352,14 @@ hr {
 	color: #fff;
 }
 
+a.info{
+    color: #00b7a7;
+}
+
+a.info:hover{
+    color: #009688;
+}
+
 .info {
     font-size: 25px;
     letter-spacing: 0.2px;
@@ -855,10 +863,6 @@ img{
 .quotes{
     font-family: "Bank Gothic Light BT";
     font-size: 45px;
-}
-
-#testimonials p{
-    font-size: 18px;
 }
 
 
