@@ -375,7 +375,7 @@ img{
 .float-btn{
      position: fixed;
      bottom: 30px;
-     right: 30px;
+     left: 30px;
      /*cursor: pointer;*/
      z-index: 1000;
      background-color: #303030;
