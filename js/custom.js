@@ -69,6 +69,7 @@
 	$("#buyForm").on("submit", function(e) {
 		e.preventDefault();
 		saveRegisters();
+        ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Know More'});
 	});
 
 	$('.fbShareButton').on('click',function(e){
