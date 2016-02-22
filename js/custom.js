@@ -56,10 +56,10 @@
 
 		var callback = {
 			success:function(e){
-				$('#response').html('Registered Successfully. Thanks for the support!').addClass('success').fadeIn('fast');
+				$('#response').html('Sign-up Successful').addClass('success').fadeIn('fast');
 			},
 			error: function(){
-				$('#response').html('Uh Oh, something went wrong').addClass('error').fadeIn('fast');
+				$('#response').html('Uh Oh, something went wrong! Please try again.').addClass('error').fadeIn('fast');
 			}
 		};
 
