@@ -662,7 +662,8 @@ img{
 ============================ */
 
 .my-hide{
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 
 .my-hide > p{
