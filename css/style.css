@@ -17,13 +17,11 @@
 .fa-infinity:before {
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial !important;
     content: '\221E';
-    speak: none;
 }
 
 .fa-HD:before {
     font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial !important;
     content: 'HD';
-    speak: none;
 }
 
 .wow {
@@ -118,14 +116,24 @@ a:focus {
 }
 
 @media (max-width: 767px) {
-  .navbar-brand .title-name{
-      font-size: 35px;
-  }
+    .navbar-brand .title-name{
+        font-size: 25px;
+        color: #fff;
+    }
+  
+    .navbar-brand{
+        font-size: 12px;
+        color: #fff;
+    }
 
-  .navbar-brand{
-      font-size: 12px;
+    .navbar {
+        background-color: #009688
+    }
+
+    .navbar-toggle {
+        color: #fff;
+    }
   }
-}
 
 .navbar-custom.top-nav-collapse .navbar-brand{
     color: #fff;
@@ -198,6 +206,15 @@ a:focus {
     font-size: 14px;
     color: #000;
 }
+@media (max-width: 767px) {
+    .navbar-toggle {
+        color: #fff;
+    }
+
+    .navbar-custom ul.nav li a{
+        color: #fff;
+    }
+  }
 
 .top-nav-collapse .navbar-toggle{
     color: #fff;
@@ -285,15 +302,15 @@ hr {
 }
 
 /* margins */
-@media (min-width: 767px) {
+/* @media (min-width: 767px) { */
     .marginbot-0{margin-bottom:0 !important;}
     .marginbot-10{margin-bottom:10px !important;}
     .marginbot-20{margin-bottom:20px !important;}
     .marginbot-30{margin-bottom:30px !important;}
     .marginbot-40{margin-bottom:40px !important;}
     .marginbot-50{margin-bottom:50px !important;}
-    .sidemarginbot-10{margin: 0 1px}
-}
+    .sidemarginbot-10{margin: 0 10px}
+/* } */
 
 
 /* paddings */
@@ -373,7 +390,7 @@ h2{
 }
 
 h4{
-    font-weight: 300;
+    font-weight: 500;
 }
 
 img{
@@ -506,13 +523,13 @@ img{
 
 .intro .intro-text h4 {
     color: #303030;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: none;
     font-size: 20px;
 }
 
 .intro .featured{
-    margin: 30px 0 0 0;
+    margin: 30px auto 0 auto;
     width: 90%;
 }
 
@@ -617,6 +634,20 @@ img{
     .featured-title h5{
         font-size: 16px;
     }
+}
+
+/* ===========================
+--- Digital Signage
+============================ */
+
+.digital-signage .description h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.digital-signage .description h5.bold{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* ===========================
@@ -1012,12 +1043,14 @@ footer small{
     border-color: #009688;
 }
 
-.btn-skin:hover,
-.btn-skin:focus,
-.btn-skin.active {
+.btn-skin:hover{
   color: #fff;
   background-color: #666;
   border-color: #666;
+}
+
+.btn-skin:focus{
+    color: #fff;
 }
 
 .get-btn{
@@ -1034,6 +1067,10 @@ footer small{
 .get-btn:active{
     border: 3px solid #eee;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3)
+}
+
+.contact-btn{
+    font-size: 20px;
 }
 
 /* Media queries */
