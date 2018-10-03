@@ -40,32 +40,7 @@
 		}
 	});
 
-    Parse.initialize("GFFNw5yzAcReEiVN7h5Poqj1G6QGDbeZqgcmZMrl", "g6cIiYa4DkkxiUMCCogf8ASspdAFQFIRbcRJ1eGf");
-
-	var Registration = Parse.Object.extend("Registration");
-
-	function saveRegisters(){
-		var registration = new Registration();
-
-		registration.set("name", $("#name").val().toLowerCase().replace(/^[\u00C0-\u1FFF\u2C00-\uD7FF\w]|\s[\u00C0-\u1FFF\u2C00-\uD7FF\w]/g, function(letter) {
-			return letter.toUpperCase();
-		}));
-		registration.set("email", $("#email").val());
-		registration.set("city", $("#city").val());
-		registration.set("number", $("#number").val());
-
-		var callback = {
-			success:function(e){
-				$('#response').html('Sign-up Successful').addClass('success').fadeIn('fast');
-			},
-			error: function(){
-				$('#response').html('Uh Oh, something went wrong! Please try again.').addClass('error').fadeIn('fast');
-			}
-		};
-
-		registration.save(null, callback);
-	}
-
+    
 	$("#buyForm").on("submit", function(e) {
 		e.preventDefault();
 		saveRegisters();
@@ -88,26 +63,10 @@
 		window.open('https://twitter.com/intent/follow?screen_name=zestpc');
 	});
 
-	$.get( "ajax/test.html", function( data ) {
-		$( ".result" ).html( data );
-		alert( "Load was performed." );
-	});
-
-
-	/*$.post(
-		'https://graph.facebook.com',
-		{
-			id: 'http://zestpc.com/',
-			scrape: true
-		},
-		function(response){
-			console.log(response);
-		}
-	);*/
 
 	$(document).ready(function(){
-		autoClick('.play-box','.play-desc',10000);
-		autoClick('.play-box','.play-image',10000);
+		autoClick('.software-box','.software-desc',10000);
+		autoClick('.software-box','.software-image',10000);
 		autoClick('.feature-box','.feature-desc',5000);
 		autoClick('.do-box','.do-desc',5000);
 		autoClick('.featured-box','.featured-image',10000);

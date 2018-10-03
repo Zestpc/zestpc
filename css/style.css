@@ -481,6 +481,12 @@ img{
     }
 }
 
+@media (max-width: 767px) {
+    .info{
+        font-size:20px;
+    }
+}
+
 /* ===========================
 --- Intro
 ============================ */
@@ -534,7 +540,8 @@ img{
 }
 
 .my-hide-2{
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 
 .my-hide-2 > img{
@@ -651,7 +658,7 @@ img{
 }
 
 /* ===========================
---- Play
+--- Signage Software
 ============================ */
 
 .my-hide{
@@ -666,20 +673,33 @@ img{
     width: 100%;
 }
 
-.play{
+/* .software{
     background-color: #323232;
+} */
+
+.software .description {
+    padding: 20px;
 }
+
+.software .description li{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+    padding: 5px;
+}
+
+
 
 .float-left{
     float: left;
 }
 
-.play-title h5{
+.software-title h5{
     font-size: 22px;
     font-weight: 500;
 }
 
-.play-desc{
+.software-desc{
     position: absolute;
     top: 0;
     -webkit-transition: 400ms;
@@ -692,13 +712,13 @@ img{
     font-size: 20px;
 }
 
-.play-desc.active{
+.software-desc.active{
     opacity:1;
     visibility:visible;
 }
 
-.play-image{
-    position: absolute;
+.software-image{
+    /* position: absolute; */
     top: 0;
     -webkit-transition: 400ms;
     -moz-transition: 400ms;
@@ -707,36 +727,38 @@ img{
     width:100%;
     text-align: center;
     opacity:0;
-    visibility:hidden;
+    display:none;
+    /* visibility:hidden; */
 }
 
-.play-image.active{
+.software-image.active{
     opacity:1;
-    visibility:visible;
+    display:block;
+    /* visibility:visible; */
 }
 
-.play-image img{
+.software-image img{
     width: 100%;
 }
 
-.play-box{
+.software-box{
     position: relative;
     overflow: hidden;
     margin: 0 0 0 0;
     cursor: pointer;
 }
 
-.play-desc > p{
+.software-desc > p{
     font-size: 20px;
     text-align: center;
 }
 
-.play-icon{
+.software-icon{
     font-size: 5px;
 }
 
 @media (max-width: 767px) {
-    .play-desc > p{
+    .software-desc > p{
         font-size: 15px;
     }
 
@@ -745,14 +767,16 @@ img{
         margin-bottom: 35px;
     }
 
-    .play-title h5{
+    .software-title h5{
         font-size: 16px;
     }
 
-    .play-icon{
+    .software-icon{
         font-size: 5px;
     }
 }
+
+
 /* ===========================
 --- Features
 ============================ */
