@@ -647,12 +647,12 @@ img{
 --- Digital Signage
 ============================ */
 
-.digital-signage .description h5{
+.description h5{
     font-size: 20px;
     font-weight: 300;
 }
 
-.digital-signage .description h5.bold{
+.description h5.bold{
     font-size: 20px;
     font-weight: 500;
 }

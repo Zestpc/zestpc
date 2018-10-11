@@ -47,6 +47,25 @@
         ga('send', 'event', { eventCategory: 'Contact', eventAction: 'Know More'});
 	});
 
+	function saveRegisters(){
+		$.ajax({
+			dataType: 'jsonp',
+			url: "http://getsimpleform.com/messages/ajax?form_api_token=56965532e4412eb7f085658f6ea01148",
+			data: {
+			  email: $("#email").val(),
+			  name: $("#name").val(),
+			  city: $("#city").val(),
+			  number: $("#number").val(),
+			}
+		  }).done(function() {
+			//callback which can be used to show a thank you message
+			//and reset the form
+			$('#response').html('Success! We will contact you soon').addClass('success').fadeIn('fast');
+		  }).error(function(){
+			$('#response').html('Uh Oh, something went wrong! Please try again.').addClass('error').fadeIn('fast');
+		  });
+	}
+
 	$('.fbShareButton').on('click',function(e){
 		window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://zestpc.com/');
 	});
